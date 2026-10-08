@@ -60,7 +60,7 @@ Abrir el proyecto en Android Studio y ejecutarlo en dos celulares conectados al 
 ## API
 
 | Archivo | Método | Qué hace |
-
+|---|---|---|
 | login.php | POST | Inicia sesión y devuelve el token |
 | logout.php | POST | Cierra la sesión |
 | perfil.php | GET | Datos del usuario conectado |
