@@ -1,7 +1,7 @@
 # Monitor IoT
 
 Aplicación Android para monitorear y controlar dispositivos IoT conectados a una Raspberry Pi.
-Proyecto de la asignatura TI3042 (Aplicaciones Móviles para IoT), Unidad 2.
+Proyecto de la asignatura Aplicaciones Móviles para IoT.
 
 - **App:** Kotlin, layouts XML, Volley y MPAndroidChart
 - **Servidor:** Raspberry Pi con Apache + PHP (API) y un agente en Python que maneja los GPIO
@@ -34,13 +34,8 @@ Celulares Android  --(Wi-Fi, HTTPS)-->  Raspberry Pi (API PHP + agente)  --(SSL)
 - Bloqueo de la cuenta después de 5 intentos fallidos (15 minutos)
 - Consultas preparadas (evitan inyección SQL)
 
-## Cómo instalar
 
-### 1. AWS RDS
-En la instancia `database-1`, dejar **Publicly accessible = Yes** y en el *Security group*
-permitir el puerto 3306 desde la IP pública de la red donde está la Raspberry Pi.
-
-### 2. Raspberry Pi
+### Raspberry Pi
 Copiar la carpeta `servidor/` a la Pi y ejecutar:
 
 ```bash
@@ -53,7 +48,7 @@ Después crear el primer administrador:
 sudo php /var/www/html/iot/crear_usuario.php admin admin Nombre Apellido correo@ejemplo.com
 ```
 
-### 3. App
+###  App
 Abrir el proyecto en Android Studio y ejecutarlo en dos celulares conectados al mismo Wi-Fi que la Pi.
 
 ### Si la Raspberry Pi tiene otra IP (no 10.16.1.28)
@@ -62,18 +57,10 @@ Abrir el proyecto en Android Studio y ejecutarlo en dos celulares conectados al 
 3. Cambiar la IP en `Conexion.kt` y en `res/xml/network_security_config.xml`
 4. Volver a ejecutar `instalar.sh` en la Pi
 
-## Archivos que no se suben a GitHub
-
-Tienen datos privados, por eso están en `.gitignore`:
-
-- `servidor/api/config.php` (datos de RDS). Hay un `config.example.php` de ejemplo
-- `servidor/agente/agente.conf` (clave del agente). Hay un `agente.conf.example`
-- `servidor/ssl/servidor_iot.key` (clave privada del certificado)
-
 ## API
 
 | Archivo | Método | Qué hace |
-|---|---|---|
+
 | login.php | POST | Inicia sesión y devuelve el token |
 | logout.php | POST | Cierra la sesión |
 | perfil.php | GET | Datos del usuario conectado |
