@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuActividad"
+        android:icon="@drawable/ic_actividad"
+        android:title="Actividad"
+        app:iconTint="@color/blanco"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuUsuarios"
+        android:icon="@drawable/ic_usuarios"
+        android:title="Usuarios"
+        app:iconTint="@color/blanco"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuSalir"
+        android:title="Cerrar sesión"
+        app:showAsAction="never" />
+</menu>

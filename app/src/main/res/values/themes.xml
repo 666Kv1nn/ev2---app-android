@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MonitorIot" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/gris_oscuro</item>
+        <item name="colorPrimaryVariant">#000A12</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/naranjo</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+
+    <!-- titulos de seccion (SENSORES, ACTUADORES...) -->
+    <style name="TituloSeccion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <!-- boton principal naranjo -->
+    <style name="BotonNaranjo" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/naranjo</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+</resources>

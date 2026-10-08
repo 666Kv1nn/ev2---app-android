@@ -1,0 +1,15 @@
+# Copiar como agente.conf (no se sube a GitHub porque tiene la clave)
+
+[servidor]
+url = https://127.0.0.1/iot/agente.php
+# igual a 'clave_dispositivo' de api/config.php
+clave = CAMBIAR
+certificado = /etc/ssl/monitor-iot/servidor_iot.crt
+
+[gpio]
+# pines BCM, dejar vacio si no esta conectado
+VENT-01 = 17
+LED-01 = 27
+ALM-01 = 22
+# pin del DHT22, vacio = valores simulados
+DHT =

@@ -1,0 +1,14 @@
+# Android / Gradle
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.kotlin/
+
+# Credenciales y claves: NUNCA subir a GitHub
+servidor/api/config.php
+servidor/agente/agente.conf
+servidor/ssl/*.key

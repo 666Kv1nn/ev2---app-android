@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    - No se permite HTTP sin cifrar.
+    - Para la IP de la Raspberry Pi solo se acepta su certificado (res/raw/servidor_iot.crt),
+      asi otro equipo de la red no se puede hacer pasar por la Pi.
+    Si cambia la IP hay que cambiarla aqui y en Conexion.kt
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="false">10.16.1.28</domain>
+        <trust-anchors>
+            <certificates src="@raw/servidor_iot" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

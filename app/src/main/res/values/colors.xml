@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gris_oscuro">#263238</color>
+    <color name="gris_medio">#546E7A</color>
+    <color name="fondo">#ECEFF1</color>
+    <color name="borde">#CFD8DC</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="naranjo">#EF6C00</color>
+    <color name="naranjo_claro">#FFE0B2</color>
+    <color name="verde">#2E7D32</color>
+    <color name="rojo">#C62828</color>
+    <color name="rojo_claro">#FFEBEE</color>
+    <color name="texto">#212121</color>
+    <color name="texto_secundario">#607D8B</color>
+    <color name="marca">#263238</color>
+</resources>
